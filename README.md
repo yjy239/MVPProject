@@ -107,14 +107,14 @@ create():用来创建Rtrofit+rxjava链式方法<br/>
 
 ## RxBus的调用
 
-## 1.先注册，将对应的类注册到了订阅者的队列中：<br/>
+#### 1.先注册，将对应的类注册到了订阅者的队列中：<br/>
 ```Java
 
 RxBus.getDefault().register(this);
 
 ```
 
-## 2.记住在onDestroy记得注销，避免内存泄露:
+#### 2.记住在onDestroy记得注销，避免内存泄露:
 ```Java
 
   RxBus.getDefault().unregister(this);
@@ -122,7 +122,7 @@ RxBus.getDefault().register(this);
 ```
 <br/>
 
-## 3.建立一个带 @Subcuribe({HandlerThread.MAIN})的方法<br/>
+#### 3.建立一个带 @Subcuribe({HandlerThread.MAIN})的方法<br/>
 
 ```java
   HandlerThread.MAIN,HandlerThread.IO
@@ -146,7 +146,7 @@ RxBus.getDefault().register(this);
 
 # 结束语
 <br/>
-本人只是一个月薪3k的菜鸟，虽然搭了几个工程的框架，以后觉得有的思路还算的上可以，给大家看看我错漏，毕竟一个人摸黑走，确实成长太慢了。
+本人只是一个android领域里面的菜鸟，虽然搭了几个工程的框架，以后觉得有的思路还算的上可以，给大家看看我错漏，毕竟一个人摸黑走，确实成长太慢了。
 希望大家不吝啬指教，这个工程虽然为了这个工程专门适配了不少地方，以后我想办法，同一个通用框架出来，便于自己的工程。<br/>
 
 
