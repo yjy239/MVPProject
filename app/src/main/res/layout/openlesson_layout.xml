@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="2.5dp"
+    android:paddingRight="2.5dp"
+    android:paddingTop="@dimen/mar_5">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mar_10">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_below="@+id/line"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_loading_pic" />
+
+        <TextView
+            android:id="@+id/in_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_pic"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:padding="@dimen/mar_5"
+            android:paddingTop="@dimen/mar_9"
+            android:text="x522215"
+            android:textColor="@color/colortextblack"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/in_text"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/mar_5">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_text"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/mar_5"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:text="英语老周"
+                android:textColor="@color/colortextHint"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/icon_start" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/icon_start" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/icon_start" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/icon_start" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/icon_start" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/in_text"
+            android:layout_marginBottom="@dimen/mar_5"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="35"
+            android:textSize="10sp"
+            android:textColor="@color/colorBlue" />
+    </RelativeLayout>
+
+
+</LinearLayout>

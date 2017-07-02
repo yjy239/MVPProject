@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_lang"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mar_15"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/select_lang"/>
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:layout_alignParentRight="true"
+            android:text="@string/english"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/clear"/>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:layout_alignParentRight="true"
+            android:text=""/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_update"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/update"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mar_15"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/about"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:layout_alignParentRight="true"
+            android:text=""/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_advice"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/advice"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_contract"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/contract"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_out"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mar_15"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_20"
+            android:text="@string/loginout"
+            android:textColor="@color/light_red"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:paddingLeft="2.5dp"
+    android:paddingRight="2.5dp"
+    android:paddingTop="@dimen/mar_5"
+    >
+
+
+    <ImageView
+        android:layout_below="@+id/line"
+        android:id="@+id/backimg"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_lesson"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/mar_10"
+        android:layout_marginTop="@dimen/mar_10"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="美国日常英语"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/disappoint"
+        android:background="@drawable/prelive_shape"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:padding="@dimen/margin_size_10"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_live_status"
+        android:paddingLeft="@dimen/mar_33"
+        android:paddingRight="@dimen/mar_33"
+        android:paddingTop="@dimen/mar_5"
+        android:paddingBottom="@dimen/mar_5"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/prelive"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="00:26:28"
+            android:layout_marginTop="@dimen/mar_3"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mar_15"
+        android:layout_marginLeft="@dimen/mar_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:text="周老师"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:text="￥15"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="2.5dp"
+    android:paddingRight="2.5dp"
+    android:paddingTop="@dimen/mar_5">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_button_bg_white">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv"
+            android:padding="@dimen/mar_5">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/tv_amount"
+                android:textSize="12sp"
+                tools:text="托福必考600词" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/tv_amount"
+                tools:text="华尔街英语"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:text="免费"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

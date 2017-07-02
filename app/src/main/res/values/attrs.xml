@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TRecyclerView">
+        <attr name="isReverse" format="boolean" />
+        <attr name="isRefreshable" format="boolean" />
+        <attr name="itemType" format="reference" />
+        <attr name="headType" format="reference" />
+        <attr name="footType" format="reference" />
+        <attr name="layoutMangerType" format="integer" />
+        <attr name="layoutMangerCount" format="integer" />
+        <attr name="layoutMangerOrientation" format="integer" />
+        <attr name="hasContext" format="boolean" />
+        <attr name="isWrapContent" format="boolean"/>
+    </declare-styleable>
+</resources>

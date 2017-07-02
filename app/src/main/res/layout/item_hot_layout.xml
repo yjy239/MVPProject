@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/mar_10"
+    android:paddingLeft="2.5dp"
+    android:paddingRight="2.5dp"
+    android:paddingTop="@dimen/mar_5">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_loading_pic" />
+
+        <TextView
+            android:id="@+id/in_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_pic"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mar_3"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:layout_marginRight="@dimen/mar_5"
+            android:layout_marginTop="@dimen/mar_5"
+            android:background="@color/white"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:textColor="@color/colortextblack"
+            android:textSize="14sp"
+            tools:text="《猫和老鼠》" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_text"
+            android:background="@color/white"
+            android:inputType="textMultiLine"
+            android:paddingLeft="@dimen/mar_5"
+            android:textSize="11sp"
+            tools:text="华尔街英语" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/in_text"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="¥35"
+            android:textColor="@color/colorYellow"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

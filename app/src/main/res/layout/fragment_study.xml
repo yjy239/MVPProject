@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/mar_15"
+            android:textColor="@color/colorBottomBlack"
+            android:text="学习"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="@dimen/mar_25"
+            android:layout_height="@dimen/mar_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_tab"
+        android:layout_below="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_button_bg_white_line"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_study_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/mar_5">
+
+            <ImageView
+                android:id="@+id/iv_text"
+                android:layout_width="14dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_study_text_click" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:layout_height="wrap_content"
+                android:text="@string/study_text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_study_pic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/mar_5">
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_study_pic_default" />
+
+            <TextView
+                android:id="@+id/tv_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBottomBlack"
+                android:text="@string/study_pic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_study_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/mar_5">
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_study_video_default" />
+
+            <TextView
+                android:id="@+id/tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBottomBlack"
+                android:text="@string/study_video" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_study_movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/mar_5">
+
+            <ImageView
+                android:id="@+id/iv_movie"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_study_movie_default" />
+
+            <TextView
+                android:id="@+id/tv_movie"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBottomBlack"
+                android:layout_height="wrap_content"
+                android:text="@string/study_movie" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_5"
+        android:layout_alignParentBottom="true"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/bottom_tab"
+        android:layout_above="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:TRecycleView="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/mar_5"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rl_head"
+        android:background="#337c7c7c" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_size_10">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hot_playing" />
+
+       <ImageView
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/icon_more"
+           />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginLeft="@dimen/mar_5"
+        android:layout_marginRight="@dimen/mar_5"
+        android:alpha="0.3"
+        android:background="@color/colorHint" />
+
+    <testcom.onlineeducation.view.Adapter.MuliTypeAdapter.CustomRecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TRecycleView:isWrapContent="true"
+        TRecycleView:hasContext="true"
+        TRecycleView:layoutMangerType="1"
+        TRecycleView:layoutMangerCount="2"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/colorHomeBackground"
+            />
+    </LinearLayout>
+</LinearLayout>

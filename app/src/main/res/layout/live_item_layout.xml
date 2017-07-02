@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_5"
+        android:background="@color/colorHomeBackground" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="@dimen/mar_5"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorHomeBackground" />
+
+
+    <ImageView
+        android:id="@+id/backimg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/line"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/line2"
+        android:background="@color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_loading_pic" />
+
+    <LinearLayout
+        android:id="@+id/live_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_10"
+        android:layout_marginTop="@dimen/mar_10"
+        android:background="@drawable/bg_livetstatus"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/mar_3"
+        android:paddingLeft="@dimen/mar_10"
+        android:paddingRight="@dimen/mar_10"
+        android:paddingTop="@dimen/mar_3">
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/greencircle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_3"
+            android:text="@string/living"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/live_status"
+        android:layout_marginLeft="@dimen/mar_10"
+        android:layout_marginTop="@dimen/mar_5"
+        android:text="美国日常英语"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/mar_10"
+        android:layout_marginTop="@dimen/mar_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/peoplenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mar_10"
+        android:layout_marginLeft="@dimen/mar_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周老师"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="@dimen/mar_3"
+                android:text="￥15"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

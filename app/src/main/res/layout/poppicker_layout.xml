@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="325dp"
+    android:layout_height="216dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/color33"
+            android:text="@string/cancel"/>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/color33"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12.5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/sure"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mar_10"
+        android:background="@color/hintcolor"/>
+
+    <cn.carbswang.android.numberpickerview.library.NumberPickerView
+        android:id="@+id/picker"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mar_5"
+        app:npv_TextSizeNormal="14sp"
+        app:npv_TextColorNormal="@color/colorb3"
+        app:npv_TextColorSelected="@color/color33"
+        app:npv_TextSizeSelected="17sp"
+        app:npv_DividerColor="@color/coloreb"
+        app:npv_ShowCount="5" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_flip"
+            style="@style/BannerDefaultStyle"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:banner_indicatorGravity="bottom|center_horizontal"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_solid1"
+            app:banner_transitionEffect="defaultEffect" />
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_message" />
+
+            <TextView
+                android:id="@+id/tv_message_count"
+                style="@style/style_tv_bubble"
+                android:layout_alignParentRight="true"
+                android:text="99"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

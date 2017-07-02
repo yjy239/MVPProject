@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_height="72dp"
+            android:layout_width="72dp"
+            android:layout_marginTop="@dimen/mar_10"
+            android:layout_marginBottom="@dimen/mar_10"
+            android:src="@drawable/default_loading_pic"
+            android:layout_centerInParent="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/textcolor"
+            android:layout_marginTop="@dimen/mar_8"
+            android:text="@string/uploadhead"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="@string/name"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/inputname"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:padding="@dimen/mar_15"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="@string/sex"/>
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/man"
+            android:padding="@dimen/mar_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lanuage"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="@string/lanuage"/>
+
+        <TextView
+            android:id="@+id/lanuage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/chinese"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/mar_15"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_edu"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="@string/education"/>
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/university"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/mar_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ex"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="@string/experience"/>
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/mar_15" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="141.5dp"
+        android:layout_marginTop="@dimen/mar_20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/textcolor"
+            android:padding="@dimen/mar_14"
+            android:text="@string/introduct"/>
+
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:hint="@string/introductinfo"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/codeblue"
+            android:textColor="@color/white"
+            android:text="@string/submit"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

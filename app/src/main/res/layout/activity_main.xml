@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_tab"
+        android:orientation="vertical"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_above="@+id/bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#337c7c7c" />
+
+    <LinearLayout
+        android:id="@+id/bottom_tab"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/mar_5"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_main_home_click"/>
+
+            <TextView
+                android:id="@+id/tv_main"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:text="@string/home"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/study"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_study"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_main_study_default"/>
+
+            <TextView
+                android:id="@+id/tv_study"
+                android:textColor="@color/colorHomeBlack"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/study"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lesson"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_lesson"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_main_lesson_default"/>
+
+            <TextView
+                android:id="@+id/tv_lesson"
+                android:textColor="@color/colorHomeBlack"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/lesson"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_my"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_main_my_default"/>
+
+            <TextView
+                android:id="@+id/tv_my"
+                android:textColor="@color/colorHomeBlack"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/my"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

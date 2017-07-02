@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/lesson_sort"
+            android:title="@string/lessonsort"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/symbol"
+            android:title="@string/symbol"/>
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/childeng"
+            android:title="@string/childeng"/>
+    </group>
+
+    <group
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/primaryeng"
+            android:title="@string/primaryeng"/>
+    </group>
+
+    <group
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/middleeng"
+            android:title="@string/middleeng"/>
+    </group>
+
+    <group
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/universityeng"
+            android:title="@string/universityeng"/>
+    </group>
+
+    <group
+        android:id="@+id/group7">
+        <item
+            android:id="@+id/IELTS"
+            android:title="@string/IELTS"/>
+    </group>
+
+    <group
+        android:id="@+id/group8">
+        <item
+            android:id="@+id/TOEFL"
+            android:title="@string/TOEFL"/>
+    </group>
+
+    <group
+        android:id="@+id/group9">
+        <item
+            android:id="@+id/business"
+            android:title="@string/business"/>
+    </group>
+
+
+</menu>

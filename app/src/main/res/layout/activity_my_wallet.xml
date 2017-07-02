@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/v"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/mar_15"
+            android:src="@drawable/icon_back_black" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的钱包"
+            android:textColor="@color/colorBottomBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_money_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/mar_15"
+            android:text="交易明细"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="@dimen/mar_5"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_77">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mar_10"
+                android:text="¥28.00"
+                android:textColor="@color/colorBottomBlack"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginRight="@dimen/mar_15"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/click_button_bg_blue"
+            android:gravity="center"
+            android:padding="@dimen/mar_10"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginRight="@dimen/mar_15"
+            android:layout_marginTop="@dimen/mar_20"
+            android:background="@drawable/click_button_bg_blue_border"
+            android:gravity="center"
+            android:padding="@dimen/mar_10"
+            android:text="提现"
+            android:textColor="@color/colorBlue"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_15"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15"
+        android:text="银行卡"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_change_pay_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15"
+        android:text="修改支付密码"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_find_pay_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15"
+        android:text="忘记支付密码"
+        android:textSize="16sp" />
+
+</LinearLayout>

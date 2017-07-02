@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/margin_size_10"
+        android:layout_marginRight="@dimen/margin_size_10"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mar_56"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/mail"/>
+
+
+                <EditText
+                    android:id="@+id/telnum"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:hint="@string/inputmail"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/mar_5"
+                android:background="@color/hintcolor"/>
+
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="45dp">
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/code"/>
+
+                <EditText
+                    android:id="@+id/checkcode"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:layout_toLeftOf="@+id/getcode"
+                    android:layout_toRightOf="@+id/code"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/mailcode"/>
+
+
+                <TextView
+                    android:id="@+id/getcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/codeblue"
+                    android:background="@drawable/bluetext_shape"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/mar_3"
+                    android:text="@string/getcode"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/mar_5"
+                android:background="@color/hintcolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mar_56"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/checkpassword"/>
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:hint="@string/inputpassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/mar_5"
+                android:background="@color/hintcolor"/>
+
+
+
+            <Button
+                android:id="@+id/register"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@color/codeblue"
+                android:layout_marginTop="40dp"
+                android:text="@string/signup2"/>
+
+
+            <TextView
+                android:id="@+id/phoneregister"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/codeblue"
+                android:layout_marginTop="93.5dp"
+                android:text="@string/phonesign"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:padding="@dimen/mar_10"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="@string/head"/>
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_height="53dp"
+            android:layout_width="53dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_10"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:padding="@dimen/mar_10"
+            android:textSize="16sp"
+            android:text="@string/sex"/>
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_20"
+            android:text="@string/man"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:padding="@dimen/mar_10"
+            android:textSize="16sp"
+            android:text="@string/username"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            tools:text=""
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_20"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_language"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:padding="@dimen/mar_10"
+            android:textSize="16sp"
+            android:text="@string/mlanguage"/>
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_20"
+            android:text="@string/chinese"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

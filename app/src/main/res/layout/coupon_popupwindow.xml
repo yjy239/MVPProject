@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/mar_20"
+    android:layout_marginRight="@dimen/mar_20"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/pop_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/topay"
+        android:padding="@dimen/mar_10"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="×"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/mar_10"
+        android:layout_marginRight="@dimen/mar_10" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pop_title"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/mar_20"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="美国日常英语学习"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/mar_45"
+            android:text="￥15"
+            android:layout_below="@id/title_name"
+            android:layout_centerInParent="true"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textcolor"
+            android:alpha="0.1"
+            android:layout_marginTop="@dimen/mar_10"
+            />
+
+        <RelativeLayout
+            android:id="@+id/select_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/select_coupon"
+                android:padding="@dimen/mar_10"
+                android:layout_marginLeft="@dimen/mar_10"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="〉"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mar_10"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/codeblue"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/paysure"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

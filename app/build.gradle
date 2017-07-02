@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "testcom.onlineeducation"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "c0da991d24b9f6c94f7f2d17", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    buildTypes {
+        debug {
+//            开启代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            // Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs' //mob sdk 就是你放aar的目录地址
+        }
+        maven { url "https://jitpack.io" }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'net.qiujuer.common:okhttp:3.0.0'
+
+    compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.github.techery:properratingbar:0.0.5'
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.0.0'
+    compile project(':multi-image-selector')
+    compile name: 'SMSSDK-2.1.1', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.1', ext: 'aar'
+    compile 'cn.carbswang.android:NumberPickerView:1.1.1'
+}

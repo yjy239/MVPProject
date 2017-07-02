@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/mar_5"
+    android:paddingLeft="@dimen/mar_5"
+    android:paddingRight="@dimen/mar_5"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_button_bg_white_border"
+        android:padding="@dimen/mar_5">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="180dp"
+            android:layout_centerVertical="true"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv">
+
+            <TextView
+                android:id="@+id/tv_study_lan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mar_15"
+                android:paddingRight="@dimen/mar_15"
+                android:text="The little Dinosaur tells a story"
+                android:textSize="15sp"
+                android:textColor="@color/colorLan"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_below="@+id/tv_study_lan"
+                android:id="@+id/tv_translate_lan"
+                android:paddingLeft="@dimen/mar_15"
+                android:paddingRight="@dimen/mar_15"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/mar_10"
+                android:text="小恐龙讲故事"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorTra"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

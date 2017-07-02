@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBannerGreen">#76ee00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_red">#f15353</color>
+    <color name="colorHint">#7c7c7c</color>
+    <color name="colorHomeBackground">#f0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorBottomBlack">#333333</color>
+    <color name="colorMoney">#fddf69</color>
+
+
+    <color name="colorBlue">#33b5e5</color>
+    <color name="colorExerciseBg">#33000000</color>
+    <color name="colorRecodeTime">#8e8e8e</color>
+    <color name="colorLan">#212121</color>
+    <color name="colorTra">#848484</color>
+    <color name="black">#000000</color>
+    <color name="coloraplhaHint">#307c7c7c</color>
+    <color name="colortextblack">#424242</color>
+    <color name="colorYellow">#ffcc00</color>
+    <color name="colortextHint">#9b9b9b</color>
+    <color name="textcolor">#202020</color>
+    <color name="hintcolor">#919191</color>
+    <color name="codeblue">#1d8ad0</color>
+    <color name="colorBlackTr">#19000000</color>
+    <color name="colorHomeBlack">#303030</color>
+    <color name="color7a">#7a7a7a</color>
+    <color name="color41">#414141</color>
+    <color name="color33">#333333</color>
+    <color name="coloreb">#ebebeb</color>
+    <color name="colorb3">#b3b3b3</color>
+</resources>
+

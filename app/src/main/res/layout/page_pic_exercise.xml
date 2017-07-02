@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="@dimen/mar_10"
+            android:layout_marginTop="@dimen/mar_15" />
+
+        <RelativeLayout
+            android:id="@+id/rl_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorExerciseBg"
+            android:paddingBottom="@dimen/mar_10"
+            android:paddingTop="@dimen/mar_15">
+
+            <TextView
+                android:id="@+id/tv_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="apple"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_word_ex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_word"
+                android:layout_marginTop="@dimen/mar_13"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="n.苹果"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorExerciseBg"
+            android:paddingBottom="@dimen/mar_10"
+            android:paddingTop="@dimen/mar_15"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_sentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:lineSpacingExtra="@dimen/mar_3"
+                android:text="Did you go to class today?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_sentence_ex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sentence"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/mar_15"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="你今天去上课了吗？"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_count"
+            android:layout_width="@dimen/mar_20"
+            android:layout_height="@dimen/mar_20"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar_10"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/mar_15"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/mar_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/play_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mar_25"
+                android:paddingLeft="@dimen/mar_5"
+                android:paddingRight="@dimen/mar_5"
+                android:src="@drawable/icon_play_voice"
+                />
+
+            <ImageView
+                android:id="@+id/record_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mar_25"
+                android:paddingLeft="@dimen/mar_5"
+                android:paddingRight="@dimen/mar_5"
+                android:layout_marginLeft="@dimen/mar_5"
+                android:layout_marginRight="@dimen/mar_5"
+                android:src="@drawable/icon_record_default"
+                />
+
+
+            <ImageView
+                android:id="@+id/share_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mar_25"
+                android:paddingLeft="@dimen/mar_5"
+                android:paddingRight="@dimen/mar_5"
+                android:src="@drawable/icon_share"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/mar_5"
+            android:layout_marginBottom="25dp"
+            android:text="00:00:00"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

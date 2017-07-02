@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_loading_pic"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlackTr"
+            >
+
+            <TextView
+                android:id="@+id/tv_bottom_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:padding="@dimen/mar_5"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_10"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="全屏"
+                android:padding="@dimen/mar_5"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_full_screen"
+                android:textColor="@color/white"
+                android:text="30:00"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/tv_bottom_play"
+                android:layout_toLeftOf="@+id/tv_time"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mar_10"
+                android:background="@color/white"
+                android:layout_height="4dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/mar_10"
+        android:layout_marginRight="@dimen/mar_10"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/textcolor"
+                android:text="看看美国人对英语发音的有什么看法1313131313"/>
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/mar_10"
+                android:layout_below="@+id/tv_name"
+                android:text="小周"/>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_name"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/stars"
+                    />
+
+
+                <io.techery.properratingbar.ProperRatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_title"
+                    android:layout_below="@id/tv_title"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:prb_defaultRating="0"
+                    app:prb_clickable="true"
+                    app:prb_symbolicTick="★"
+                    app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+                    app:prb_symbolicTickSelectedColor="@color/colorYellow"
+                    app:prb_totalTicks="5" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_below="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="content"/>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/mar_10"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_height="@dimen/line"
+                android:layout_width="match_parent"
+                android:background="@color/hintcolor"/>
+
+
+            <TextView
+                android:id="@+id/appoint"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:background="@drawable/round_text"
+                android:layout_marginTop="@dimen/mar_10"
+                android:padding="@dimen/mar_10"
+                android:textColor="@color/white"
+                android:text="@string/appteacher"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

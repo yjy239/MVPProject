@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentInsetStart="0dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:text="@string/lesson"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rl_head"
+                android:background="#337c7c7c" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/bottom_tab"
+                    style="@style/ll_home_tab"
+                    android:layout_height="37dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_icon1"
+                        style="@style/fragment_tab_rl">
+
+                        <TextView
+                            android:id="@+id/tv_icon1"
+                            style="@style/fragment_tab_tv_home"
+                            android:textColor="@color/colorBlue"
+                            android:text="@string/mylive" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_icon2"
+                        style="@style/fragment_tab_rl">
+
+                        <TextView
+                            android:id="@+id/tv_icon2"
+                            style="@style/fragment_tab_tv_home1"
+                            android:text="@string/live" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_icon3"
+                        style="@style/fragment_tab_rl">
+
+                        <TextView
+                            android:id="@+id/tv_icon3"
+                            style="@style/fragment_tab_tv_home1"
+                            android:text="@string/appointment" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_icon4"
+                        style="@style/fragment_tab_rl">
+
+                        <TextView
+                            android:id="@+id/tv_icon4"
+                            style="@style/fragment_tab_tv_home1"
+                            android:text="@string/openlesson" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_icon5"
+                        style="@style/fragment_tab_rl">
+
+                        <TextView
+                            android:id="@+id/tv_icon5"
+                            style="@style/fragment_tab_tv_home1"
+                            android:text="@string/mylesson" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mar_3"
+                    android:layout_below="@+id/rl_head"
+                    android:background="#337c7c7c" />
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/container"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navview"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/lesson_menu"
+            app:theme="@style/ItemHeight">
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

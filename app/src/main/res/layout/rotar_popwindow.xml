@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/mar_20"
+    android:layout_marginRight="@dimen/mar_20"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/pop_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/thanks"
+        android:padding="@dimen/mar_10"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="×"
+        android:padding="@dimen/mar_10"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/mar_10"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pop_title"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/textcolor"
+            android:padding="@dimen/margin_size_10"
+            android:alpha="0.4"
+            android:text="@string/star"/>
+
+        <io.techery.properratingbar.ProperRatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:prb_defaultRating="0"
+            app:prb_clickable="true"
+            app:prb_symbolicTick="★"
+            app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+            app:prb_symbolicTickSelectedColor="@color/colorYellow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mar_10"
+            app:prb_totalTicks="5" />
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/codeblue"
+            android:layout_marginTop="@dimen/mar_45"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/submit"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
